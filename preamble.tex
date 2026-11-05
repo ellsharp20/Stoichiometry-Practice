@@ -1,23 +1,35 @@
 %%%General
 \usepackage{verbatim} % For comments and other
 \usepackage{framed}
+\usepackage{multicol}
 %%%
 %%
 %%% Subject Specific
 %% Math
+\usepackage{mathtools}
 \usepackage{amsmath}  % For math
 \allowdisplaybreaks % Allows page breaks inside long math blocks
 \usepackage{amssymb}  % For more math
 \usepackage{siunitx}  % standardization of si units
 \DeclareSIUnit\Calorie{Cal}
 \DeclareSIUnit\calorie{cal}
+\DeclareSIUnit\molc{molecules}
+\DeclareSIUnit\atoms{atoms}
+\DeclareSIUnit\Molar{M}
 \usepackage{physunits}
+\usepackage{pgf}
 
 \usepackage{unicode-math} % to ensure compatibility to correctly display math symbols
 %%
 %
 %% Chemistry
 \usepackage[version=4]{mhchem} % Package to help with formatting chemical formulae
+%%
+\usepackage{modiagram} % Allows drawing molecular orbital diagrams
+%
+\setmodiagram{style = fancy, distance = 7cm, AO-width = 15pt, labels, names} % Setting options for the molecular orbital diagrams
+%%
+\usepackage{chemmacros}
 %%
 %
 %% Physics
@@ -31,6 +43,7 @@
 \usepackage[figurename=Figure]{caption}
 \usepackage{subfig}   % For subfigures
 \usepackage{xcolor,cancel}
+\renewcommand{\CancelColor}{\color{red}}
 \usepackage{wrapfig}
 %%
 %
@@ -43,6 +56,9 @@
 %% Tables
 \usepackage{float} % For tables and other floats
 \usepackage[table]{xcolor} % Setting parameters for how tables will be formatted
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{booktabs} % For making nicer tables
 %%
 %
 %%
@@ -82,10 +98,10 @@ headheight = 10mm]% Set \headheight to 10mm%]% Set \headheight to 10mm
 {\center\large\bfseries}{}{1em}{}
 
 \titleformat{\subsection}
-{\center\large\bfseries}{}{1em}{}
+{\RaggedRight\large\bfseries}{}{1em}{}
 
 \titleformat{\subsubsection}
-{\center\normalsize\bfseries}{}{1em}{}
+{\RaggedRight\normalsize\bfseries}{}{1em}{}
 
 \titleformat{\paragraph}
 {\normalfont\normalsize\mdseries}{}{0em}{}
