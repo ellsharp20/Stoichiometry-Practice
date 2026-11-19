@@ -30,14 +30,66 @@
 %%
 %
 \textbf{For each of the following reactions...}
+\begin{enumerate}[label=\alph*.]
+    \item Write the balanced chemical equation. Use the table provided to keep track of how many of each group are on the product and reactant sides.
+    \item Determine the Limiting Reagent.
+    \item Calculate the Theoretical Yield in grams of the underlined product.
+    \item Calculate the Percent Yield of the underlined product. 
+\end{enumerate} 
+\section{Abbreviations and Variable Names Used}
 
-a) Write the balanced chemical equation. Use the table provided to keep track of how many of each group are on the product and reactant sides. 
+This section will be referring to the mock balanced chemical reaction below where lowercase letters are coefficients and uppercase letter are the compound.
+\begin{gather*}
+    \ce{aA + bB -> cC + dD}
+\end{gather*}
 
-b) Determine the Limiting Reagent. 
+\begin{table}[H]
+\centering
+\begin{tabular}{b{0.1\linewidth}|p{0.7\linewidth}} 
+    $m_{atom}$ & Mass of one atom of this element \\
+   \hline
+    Count & The number of atoms of that element present in this compound \\
+    \hline
+    $\Sigma \ m_{atoms}$ & The collective mass of all atoms of that element in the molecule. Mathematically $\Sigma \ m_{atoms} = m_{atom} \cdot
+    \text{Count}$ \\
+    \hline
+    MM & Molar Mass of the Molecule in $\qty{}{\frac{\gram}{\mole}}$ \\
+    \hline
+    $m_A$ & Given mass of chemical A \\
+    \hline
+    $MM_A$ & Molar Mass of chemical A\\
+    \hline  
+\end{tabular}
+\end{table}
+\section{The Strategy for Each Part}
 
-c) Calculate the Theoretical Yield of the underlined product.
+\subsubsection{Part a}
+You can only change the coefficients in front of each compound. The subscripts have to stay the same. Changing the subscripts changes what reaction is occurring. We only want to change how many of each molecule are being used at one time. 
 
-d) Calculate the Percent Yield of the underlined product. 
+\subsubsection{Part b} 
+Convert the mass in grams of each reactant into a mass in grams of the underlined product. To convert between a measurement of one compound to another compound, you need to use the balanced chemical reaction between the two compounds.
+
+To convert a mass in grams to an amount in moles, we need to calculate the Molar Mass of the compound. Using the elemental masses on the periodic table, add together the masses of all atoms in the compound. The molar mass of Carbon is $\qty{12.01}{\gram}$. The molar mass of Hydrogen is $\qty{1.01}{\gram}$. The molar mass of $\ce{CH4}$ which has 1 Carbon atom and 4 Hydrogen atoms is... 
+\begin{gather*}
+    \qty{12.01}{\gram} \ + \ (4 \ \cdot \ \qty{1.01 }{\gram}) \\ 
+    \qty{16.05}{\gram}
+\end{gather*}
+
+This tells us how much of the product would be created if all of that reactant was used. Usually, one of the reactants will be able to make more product. The reactant that makes \textbf{less product} is the Limiting reactant. The general set up for this calculation in below. 
+\begin{gather*} 
+    m_A \ \cdot \frac{1}{MM_A} \cdot \frac{c \ \text{mol C}}{a \ \text{mol A}} \cdot MM_C = \boxed{m_C}
+\end{gather*}
+
+\subsubsection{Part c} 
+The amount of product made by the limiting reactant calculated in part b is our theoretical yield. 
+
+\subsubsection{Part d} 
+Percent Yield compares the actual amount of product created (given in the question) with the theoretical maximum amount that \textbf{could} have been made. 
+\begin{gather*}
+    \text{Percent Yield} = 100\ \% \ \cdot \frac{\text{Actual Yield}}{\text{Theoretical Yield}}
+\end{gather*}
+
+\newpage
 
 \textbf{1) $\qty{72.9}{\gram}$ of \ce{HCl} is mixed with \qty{148.2}{\gram} of \ce{Ca(OH)2} in an aqueous solution. This Acid-Base reaction yields \qty{103}{\gram} of \underline{\ce{CaCl2}}.}
 \begin{table}[H]
@@ -66,7 +118,6 @@ d) Calculate the Percent Yield of the underlined product.
 \end{tabular}
 \end{table}
 
-\newpage
 \parskip =53mm
 
 \textbf{2) $\qty{64.0}{\gram}$ of Carbon Dioxide and \qty{34}{\gram} of water forms glucose (\ce{C6H12O6}) and Oxygen gas. This reaction yields \qty{43.2}{\gram} of \underline{glucose}.} 
